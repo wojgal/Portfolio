@@ -1,5 +1,6 @@
 import pygame
 
+
 AI_BUTTON_IMAGE = pygame.image.load('images/ai.png')
 AI_PRESSED_BUTTON_IMAGE = pygame.image.load('images/ai_pressed.png')
 
@@ -7,6 +8,17 @@ ONE_VS_ONE_IMAGE = pygame.image.load('images/1v1.png')
 ONE_VS_ONE_PRESSED_IMAGE = pygame.image.load('images/1v1_pressed.png')
 
 RESTART_IMAGE = pygame.image.load('images/restart.png')
+
+X_PLYAER_IMAGE = pygame.transform.scale_by(pygame.image.load('images/x_btn.png'), 0.65)
+X_PLYAER_PRESSED_IMAGE = pygame.transform.scale_by(pygame.image.load('images/x_btn_pressed.png'), 0.65)
+
+O_PLYAER_IMAGE = pygame.transform.scale_by(pygame.image.load('images/o_btn.png'), 0.65)
+O_PLYAER_PRESSED_IMAGE = pygame.transform.scale_by(pygame.image.load('images/o_btn_pressed.png'), 0.65)
+
+X_WIN_IMAGE = pygame.image.load('images/x_win.png')
+O_WIN_IMAGE = pygame.image.load('images/o_win.png')
+DRAW_IMAGE = pygame.image.load('images/draw.png')
+
 
 class Button():
     def __init__(self, x, y, image, image_pressed) -> None:
@@ -19,6 +31,7 @@ class Button():
         self.image = image
         self.image_pressed = image_pressed
         self.active = False
+        self.visible = True
 
     def get_cords(self):
         return (self.x, self.y)
@@ -29,8 +42,11 @@ class Button():
     def is_active(self):
         return self.active
     
-    def switch_active(self):
-        self.active = not self.active
+    def set_active(self, active):
+        self.active = active
+
+    def set_visible(self, visible):
+        self.visible = visible
 
     def check_click(self):
         mouse_position = pygame.mouse.get_pos()
@@ -38,6 +54,9 @@ class Button():
         return self.rect.collidepoint(mouse_position)
     
     def draw(self, screen):
+        if not self.visible:
+            return
+        
         if not self.active:
             screen.blit(self.image, (self.x, self.y))
 
