@@ -15,25 +15,25 @@ Projekt został zaimplementowany w jeżyku programowania **Python**, przy użyci
 Wykorzystany zbiór danych to [House Price Prediction Treated Dataset](https://www.kaggle.com/datasets/aravinii/house-price-prediction-treated-dataset?resource=download) zawierający informacje o sprzedaży domów w King Country w USA. Całość podzielona jest na dwa osobne pliki: `train` i `test`, które zawierają po 14 kolumn. Ostatecznie zostały wybrane tylko 2 kolumny `prize` i `living_in_m2`, które będą wykorzystane przy treningu modelu.
 
 ## 4. Model Regresji Liniowej
-Zaimplementowana została klasa główna `LinearRegressionModel`, która dziedziczy po `nn.Module`. W jej wnętrzu jako warsta liniowa zostaje użyta klasa `nn.Linear`, która posiada jeden parametr wejściowy (powierzchnia) i 1 wyjściowy (cena).
+Zaimplementowana została klasa główna `LinearRegressionModel`, która dziedziczy po `nn.Module`. W jej wnętrzu jako **warsta liniowa** zostaje użyta klasa `nn.Linear`, która posiada jeden parametr wejściowy (powierzchnia) i 1 wyjściowy (cena).
 
 ## 5. Funkcja straty, optymalizator i pętla treningowa
-Funkcja straty obliczana jest za pomocą klasy `nn.L1Loss` liczącej średni błąd bezwzględny (MAE). 
-Jako optymalizatora użyjemy `optim.SGD` metody stochastycznego spadku gradientu. 
+Funkcja straty obliczana jest za pomocą klasy `nn.L1Loss` liczącej **średni błąd bezwzględny (MAE)**. 
+Jako optymalizatora użyjemy `optim.SGD` metody **stochastycznego spadku gradientu**. 
 Szybkość uczenia wynośi `0.05`, a ilość epok w treningu to `501`. 
 
 ## 6. Wizualizacja wyników i wartość funkcji straty
-### Wyniki modelu przed treningiem
+### 6.1 Wyniki modelu przed treningiem
 ![Predictions_before_train](https://github.com/user-attachments/assets/6519e46d-e5ec-493f-ad6a-eb0456fff902)
 
-### Wyniki modelu po treningu
+### 6.2 Wyniki modelu po treningu
 ![Predictions_after_train](https://github.com/user-attachments/assets/3640bc5d-c2ff-404a-a938-7367e87111de)
 
 Po porównaniu dwóch wykresów można zauważyć, iż zielona linia przedstawiająca predykcje modelu dopasowała się do trendu danych.
 
-### Wartość funkcji straty
+### 6.3 Wartość funkcji straty
 ![Loss_values](https://github.com/user-attachments/assets/02a8bf37-86d1-4e4c-bfe2-a7cfd8b14cdf)
-Wartość funkcji straty wraz z kolejnymi epokami drastycznie spada co jest dobrą oznaką. Model po treningu osiągnął swoje możliwości dla aktualnej konfiguracji.
+Wartość funkcji straty wraz z kolejnymi epokami drastycznie **spada** co jest dobrą oznaką. Model po treningu osiągnął swoje możliwości dla aktualnej konfiguracji.
 
 ## 7. Aplikacja webowa z wykorzystaniem modelu
 Wartości parametrów wytrenowanego modelu zostały zapisane do pliku `.pth`, który został wykorzystany przy implementacji aplikacji webowej. W prostym interfejsie użytkownik może korzystać z możliwości modelu do własnych predykcji cen mieszkań na podstawie ich powierzchni. 
