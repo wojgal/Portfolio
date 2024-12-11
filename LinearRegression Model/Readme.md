@@ -23,4 +23,21 @@ Wykorzystany zbiór danych to [House Price Prediction Treated Dataset](https://w
 Zaimplementowana została klasa główna `LinearRegressionModel`, która dziedziczy po `nn.Module`. W jej wnętrzu jako warsta liniowa zostaje użyta klasa `nn.Linear`, która posiada jeden parametr wejściowy (powierzchnia) i 1 wyjściowy (cena).
 
 ## 5. Funkcja straty, optymalizator i pętla treningowa
-Funkcja straty obliczana jest za pomocą klasy `nn.L1Loss` liczącej średni błąd bezwzględny (MAE). Jako optymalizatora użyjemy `optim.SGD` metody stochastycznego spadku gradientu. Szybkość uczenia uczenia wynośi `0.05`, a ilość epok w treningu to `501`. 
+Funkcja straty obliczana jest za pomocą klasy `nn.L1Loss` liczącej średni błąd bezwzględny (MAE). 
+Jako optymalizatora użyjemy `optim.SGD` metody stochastycznego spadku gradientu. 
+Szybkość uczenia wynośi `0.05`, a ilość epok w treningu to `501`. 
+
+## 6. Wizualizacja wyników i wartość funkcji straty
+### Wyniki modelu przed treningiem
+![Predictions_before_train](https://github.com/user-attachments/assets/6519e46d-e5ec-493f-ad6a-eb0456fff902)
+
+### Wyniki modelu po treningu
+![Predictions_after_train](https://github.com/user-attachments/assets/3640bc5d-c2ff-404a-a938-7367e87111de)
+
+Po porównaniu dwóch wykresów można zauważyć, iż zielona linia przedstawiająca predykcje modelu dopasowała się do trendu danych.
+
+### Wartość funkcji straty
+![Loss_values](https://github.com/user-attachments/assets/02a8bf37-86d1-4e4c-bfe2-a7cfd8b14cdf)
+Wartość funkcji straty wraz z kolejnymi epokami drastycznie spada i jej po
+
+
