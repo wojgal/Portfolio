@@ -14,11 +14,6 @@ Projekt został zaimplementowany w jeżyku programowania **Python**, przy użyci
 ## 3. Zbiór Danych
 Wykorzystany zbiór danych to [House Price Prediction Treated Dataset](https://www.kaggle.com/datasets/aravinii/house-price-prediction-treated-dataset?resource=download) zawierający informacje o sprzedaży domów w King Country w USA. Całość podzielona jest na dwa osobne pliki: `train` i `test`, które zawierają po 14 kolumn. Ostatecznie zostały wybrane tylko 2 kolumny `prize` i `living_in_m2`, które będą wykorzystane przy treningu modelu.
 
-## 4. Proces Tworzenia
-1. Analiza i przetworzenie danych - dane są ładowane do projektu i przechodzą wstępna selekcję, po której zostają tylko kolumny `living_in_m2` (powierzchnia) i `price` (cena). Następnie są zamieniane na tensory.
-2. Budowa modelu regresji liniowej - zaimplementowana zostaje główna klasa `LinearRegressionModel`, która dziedziczy po `nn.Module`. W środku zostaje użyta klasa `nn.Linear` odpowiadająca modelowi regresji liniowej. Ustawiona zostaje na 1 argument wejściowy (powierzchnię) i 1 argument wyjściowy (cenę).
-3. [..]
-
 ## 4. Model Regresji Liniowej
 Zaimplementowana została klasa główna `LinearRegressionModel`, która dziedziczy po `nn.Module`. W jej wnętrzu jako warsta liniowa zostaje użyta klasa `nn.Linear`, która posiada jeden parametr wejściowy (powierzchnia) i 1 wyjściowy (cena).
 
@@ -38,6 +33,9 @@ Po porównaniu dwóch wykresów można zauważyć, iż zielona linia przedstawia
 
 ### Wartość funkcji straty
 ![Loss_values](https://github.com/user-attachments/assets/02a8bf37-86d1-4e4c-bfe2-a7cfd8b14cdf)
-Wartość funkcji straty wraz z kolejnymi epokami drastycznie spada i jej po
+Wartość funkcji straty wraz z kolejnymi epokami drastycznie spada co jest dobrą oznaką. Model po treningu osiągnął swoje możliwości dla aktualnej konfiguracji.
+
+## 7. Aplikacja webowa z wykorzystaniem modelu
+Wartości parametrów wytrenowanego modelu zostały zapisane do pliku `.pth`, który został wykorzystany przy implementacji aplikacji webowej. W prostym interfejsie użytkownik może korzystać z możliwości modelu do własnych predykcji cen mieszkań na podstawie ich powierzchni. 
 
 
