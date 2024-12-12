@@ -33,6 +33,7 @@ Po porównaniu dwóch wykresów można zauważyć, iż zielona linia przedstawia
 
 ### 6.3 Wartość funkcji straty
 ![Loss_values](https://github.com/user-attachments/assets/02a8bf37-86d1-4e4c-bfe2-a7cfd8b14cdf)
+
 Wartość funkcji straty wraz z kolejnymi epokami drastycznie **spada** co jest dobrą oznaką. Model po treningu osiągnął swoje możliwości dla aktualnej konfiguracji.
 
 ## 7. Aplikacja webowa z wykorzystaniem modelu
