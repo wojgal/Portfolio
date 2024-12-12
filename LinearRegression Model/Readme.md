@@ -38,4 +38,9 @@ Wartość funkcji straty wraz z kolejnymi epokami drastycznie **spada** co jest 
 ## 7. Aplikacja webowa z wykorzystaniem modelu
 Wartości parametrów wytrenowanego modelu zostały zapisane do pliku `.pth`, który został wykorzystany przy implementacji aplikacji webowej. W prostym interfejsie użytkownik może korzystać z możliwości modelu do własnych predykcji cen mieszkań na podstawie ich powierzchni. 
 
+![app_ui](https://github.com/user-attachments/assets/97c1fbe7-fe06-41c8-a981-28f413c20236)
+
+
+
+
 
