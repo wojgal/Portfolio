@@ -13,7 +13,7 @@ Projekt został zrealizowany w jęzku **Python** z użyciem następujących bibl
 
 ## 3. Struktura projektu
 Gra została zaimplementowana w modularnej strukturze, co ułatwia jej rozwijanie. Najważniejsze elementy projektu to:
-* Klasa `TicTacToe` - odpowiada za główną logikę gry, obsługę trybów, zarządzanie planszą, obsługę zdarzeń oraz interakcję gracza z AI
+* Klasa `TicTacToe` - odpowiada za główną logikę gry, obsługę trybów, zarządzanie planszą, obsługę zdarzeń oraz interakcję gracza z AI.
 * Klasa `Field` - reprezentuje pojedyczne pole planszy, umożliwiając przypisywanie symboli, rysowanie ich na ekranie oraz sprawdzanie kliknięć gracza.
 * Klasa `Button` - implementuje interaktywne przyciski z funkcją aktywacji i obsługą kliknięć.
 * **Algorytm MiniMax** - wykorzystywany przez AI do podejmowania optymalnych decyzji w grze.
@@ -22,7 +22,7 @@ Gra została zaimplementowana w modularnej strukturze, co ułatwia jej rozwijani
 * **Tryb rozgrywki** - możliwość gry w trybie 1v1 lub przeciwko AI.
 * **Algorytm MiniMax** - AI analizuje możliwe ruchy i wybiera najlepszy, zapewniając trudną, ale sprawiedliwą rozgrywkę.
 * **Interfejs użytkownika** - intuicyjne przyciski do wyboru trybu gry, restartu gry, czy zmiany symbolu gracza.
-* ** Kolizje** - mechanizmy obsługi kliknięć na planszy i przyciskach.
+* **Kolizje** - mechanizmy obsługi kliknięć na planszy i przyciskach.
 * **Punktacja i wyniki** - automatyczne wykrywanie zwycięzcy, remisu oraz aktualizacja wyników na ekranie.
 
 ## 5. Algorytm MinMax
