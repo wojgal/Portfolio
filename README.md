@@ -6,11 +6,11 @@ To repozytorium zawiera moje projekty programistyczne, stanowiące przegląd umi
 
 ## Projekty
 
-### 1. [Model Regresji Liniowej: Przewidywanie Cen Domów](./LinearRegression_HousePrices)
+### 1. [Model Regresji Liniowej: Przewidywanie Cen Domów](./LinearRegression_Model)
 - Model regresji liniowej przewidujący ceny domów na podstawie powierzchni.
 - Zbudowany przy użyciu **PyTorch** i zintegrowany z prostą aplikacją webową (**Streamlit**).
 
-### 2. [Gra Okienkowa: TicTacToe + AI](./TicTacToe_AI)
+### 2. [Gra Okienkowa: TicTacToe + AI](./TicTacToe + AI)
 - Kółko i krzyżyk z trybem dla dwóch graczy oraz gracza przeciwko AI, stworzony w PyGame.
 - AI korzysta z algorytmu MinMax do podejmowania optymalnych decyzji.
 
