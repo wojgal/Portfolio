@@ -10,7 +10,7 @@ To repozytorium zawiera moje projekty programistyczne, stanowiące przegląd umi
 - Model regresji liniowej przewidujący ceny domów na podstawie powierzchni.
 - Zbudowany przy użyciu **PyTorch** i zintegrowany z prostą aplikacją webową (**Streamlit**).
 
-### 2. [Gra Okienkowa: TicTacToe + AI](./TicTacToe + AI)
+### 2. [Gra Okienkowa: TicTacToe + AI](./TicTacToe%20%2B%20AI)
 - Kółko i krzyżyk z trybem dla dwóch graczy oraz gracza przeciwko AI, stworzony w PyGame.
 - AI korzysta z algorytmu MinMax do podejmowania optymalnych decyzji.
 
