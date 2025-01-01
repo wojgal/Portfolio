@@ -6,7 +6,7 @@ To repozytorium zawiera moje projekty programistyczne, stanowiące przegląd umi
 
 ## Projekty
 
-### 1. [Model Regresji Liniowej: Przewidywanie Cen Domów](./LinearRegression_Model)
+### 1. [Model Regresji Liniowej: Przewidywanie Cen Domów](./LinearRegression%20Model)
 - Model regresji liniowej przewidujący ceny domów na podstawie powierzchni.
 - Zbudowany przy użyciu **PyTorch** i zintegrowany z prostą aplikacją webową (**Streamlit**).
 
