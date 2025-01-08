@@ -1,6 +1,6 @@
 # Portfolio Programistyczne
 
-To repozytorium zawiera moje indywidualne projekty programistyczne, stanowiące przegląd umiejętności oraz technologii, z którymi miałem okazję pracować. Będzie ono regularnie rozwijane o nowe twórczości. Projekty realizowane w trakcie studiów znajdują się tautaj [studia](https://github.com/wojgal/studia).
+To repozytorium zawiera moje indywidualne projekty programistyczne, stanowiące przegląd umiejętności oraz technologii, z którymi miałem okazję pracować. Będzie ono regularnie rozwijane o nowe twórczości. Niektóre projekty i zadania realizowane w trakcie studiów Informatycznych znajdują się tutaj [studia repo](https://github.com/wojgal/studia).
 
 ---
 
