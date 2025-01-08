@@ -6,15 +6,18 @@ To repozytorium zawiera moje projekty programistyczne, stanowiące przegląd umi
 
 ## Projekty
 
-### 1. [Model Regresji Liniowej: Przewidywanie Cen Domów](./LinearRegression%20Model)
+### 1. [CNN Image Classification](./CNN)
+- Work in progres...
+
+### 2. [Model Regresji Liniowej: Przewidywanie Cen Domów](./LinearRegression%20Model)
 - Model regresji liniowej przewidujący ceny domów na podstawie powierzchni.
 - Zbudowany przy użyciu **PyTorch** i zintegrowany z prostą aplikacją webową (**Streamlit**).
 
-### 2. [Gra Okienkowa: TicTacToe + AI](./TicTacToe%20%2B%20AI)
+### 3. [Gra Okienkowa: TicTacToe + AI](./TicTacToe%20%2B%20AI)
 - Kółko i krzyżyk z trybem dla dwóch graczy oraz gracza przeciwko AI, stworzony w PyGame.
 - AI korzysta z algorytmu MinMax do podejmowania optymalnych decyzji.
 
-### 3. [Gra Okienkowa: Tetris](./Tetris)
+### 4. [Gra Okienkowa: Tetris](./Tetris)
 - Klasyczna gra Tetris z generowaniem klocków, systemem punktacji i oprawą dźwiękową, stworzona w PyGame.
 - Funkcje: ruch i rotacja klocków, usuwanie wierszy, muzyka w tle.
 
