@@ -24,7 +24,7 @@ Podział zbioru danych:
 * Zbiór walidacyjny: `2 800`
 * Zbiór testowy: `3 000`
 
-Każdy z obrazów zostały przypisany do jednej z sześciu kategorii:
+Każdy z obrazów został przypisany do jednej z sześciu kategorii:
 * **Buildings** (budynki)
 * **Forest** (las)
 * **Glacier** (lodowiec)
