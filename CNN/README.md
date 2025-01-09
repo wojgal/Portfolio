@@ -33,8 +33,8 @@ Każdy z obrazów został przypisany do jednej z sześciu kategorii:
 * **Street** (ulica)
 
 W celu efektywnego zarządzania i przetwarzania danych, zaimplementowana została klasa `CustomDataset`, która umożliwia:
-* **Dynamiczne ładowanie obrazów** w czasie treningi i ewaluacji modelu
-* **Transformację danych**, takie jak normalizacja i augmentacja, dostosowane do specyfiki zbioru
+* **Dynamiczne ładowanie obrazów** w czasie treningu i ewaluacji modelu
+* **Transformacje danych**, takie jak normalizacja i augmentacja, dostosowane do specyfiki zbioru
 * **Etykietowanie** odpowiednich labeli do obrazów na podstawie struktury katalogów
 
 ## 4. Architektura Konwolucyjnej Sieci Neuronowej (CNN)
