@@ -8,7 +8,7 @@ To repozytorium zawiera moje indywidualne projekty programistyczne, stanowiące 
 
 ### 1. [Model CNN: Klasyfikacja obrazów scen naturalnych](./CNN)
 - Model **klasyfikacji obrazów** scen naturalnych oparty na **konwolucyjnych sieciach nueronowych**
-- Wytrenowany i testowany na zbiorze **Intel Image Classification** osiągnął wynik **[xx]% dokładności**
+- Wytrenowany i testowany na zbiorze **Intel Image Classification**, osiągając wynik **[xx]% dokładności**
 
 ### 2. [Model Regresji Liniowej: Przewidywanie Cen Domów](./LinearRegression%20Model)
 - Model regresji liniowej przewidujący ceny domów na podstawie powierzchni.
