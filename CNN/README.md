@@ -20,9 +20,9 @@ Rozmiar zbioru danych:
 * Rozmiar obrazów: `150x150` pikseli
 
 Podział zbioru danych:
-* Zbiór treningowy: `11200`
-* Zbiór walidacyjny: `2800`
-* Zbiór testowy: `3000`
+* Zbiór treningowy: `11 200`
+* Zbiór walidacyjny: `2 800`
+* Zbiór testowy: `3 000`
 
 Każdy z obrazów zostały przypisany do jednej z sześciu kategorii:
 * **Buildings** (budynki)
