@@ -5,7 +5,12 @@
 
 ## 2. Języki i biblioteki
 Projekt został zrealizowany w języku **Python**, przy użyciu następujących bibliotek:
-* ...
+* PyTorch
+* PyTorchVision
+* PyTorchMetrics
+* Pandas
+* Matplotlib
+* Streamlit
 
 ## 3. Zbiór danych
 ...
