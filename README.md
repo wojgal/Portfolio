@@ -6,7 +6,7 @@ To repozytorium zawiera moje indywidualne projekty programistyczne, stanowiące 
 
 ## Projekty
 
-### 1. [CNN Image Classification](./CNN)
+### 1. [Model CNN: Klasyfikacja obrazów scen naturalnych](./CNN)
 - Work in progres...
 
 ### 2. [Model Regresji Liniowej: Przewidywanie Cen Domów](./LinearRegression%20Model)
