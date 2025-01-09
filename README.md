@@ -7,11 +7,12 @@ To repozytorium zawiera moje indywidualne projekty programistyczne, stanowiące 
 ## Projekty
 
 ### 1. [Model CNN: Klasyfikacja obrazów scen naturalnych](./CNN)
-- Work in progres...
+- Model Konwolucyjnej Sieci Nueronowej klasyfikujący obrazy scen naturalnych
+- Zbudowany przy użyciu **PyTorch** i zintegrowany z prostą aplikacją webową w **Streamlit**
 
 ### 2. [Model Regresji Liniowej: Przewidywanie Cen Domów](./LinearRegression%20Model)
 - Model regresji liniowej przewidujący ceny domów na podstawie powierzchni.
-- Zbudowany przy użyciu **PyTorch** i zintegrowany z prostą aplikacją webową (**Streamlit**).
+- Zbudowany przy użyciu **PyTorch** i zintegrowany z prostą aplikacją webową **Streamlit**.
 
 ### 3. [Gra Okienkowa: TicTacToe + AI](./TicTacToe%20%2B%20AI)
 - Kółko i krzyżyk z trybem dla dwóch graczy oraz gracza przeciwko AI, stworzony w PyGame.
