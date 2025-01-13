@@ -1,4 +1,4 @@
-# Model CNN: Klasyfikacja obrazów scen naturalnych
+# Natural Scene Classifier
 
 ## 1. Wprowadzenie
 Projekt przedstawia stworzenie **modelu klasyfikacji obrazów scen naturalnych** przy użyciu **konwolucyjnych sieci nueronowcyh (CNN)**. Celem było zbudowanie i ocena modelu, który z wysoką dokładnością klasyfikuje zdjęcia do odpowiednich kategorii scen naturalnych na podstawie dostarczonego zbioru danych. Wyniki przedstawione są zarówno w formie wizualnej, za pomocą wykresów i metryk, jak i w formie funkcjonalnej - w postaci aplikacji webowej umożliwiającej praktyczne użycie modelu.
