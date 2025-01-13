@@ -1,7 +1,7 @@
 # Natural Scene Classifier
 
 ## 1. Wprowadzenie
-Projekt przedstawia stworzenie **modelu klasyfikacji obrazów scen naturalnych** przy użyciu **konwolucyjnych sieci nueronowcyh (CNN)**. Celem było zbudowanie i ocena modelu, który z wysoką dokładnością klasyfikuje zdjęcia do odpowiednich kategorii scen naturalnych na podstawie dostarczonego zbioru danych. Wyniki przedstawione są zarówno w formie wizualnej, za pomocą wykresów i metryk, jak i w formie funkcjonalnej - w postaci aplikacji webowej umożliwiającej praktyczne użycie modelu.
+Projekt przedstawia stworzenie **modelu klasyfikacji obrazów scen naturalnych** przy użyciu **Konwolucyjnych Sieci Neuronowcyh (CNN)**. Celem było zbudowanie i ocena modelu, który z wysoką dokładnością klasyfikuje zdjęcia do odpowiednich kategorii scen naturalnych na podstawie dostarczonego zbioru danych. Wyniki przedstawione są zarówno w formie wizualnej, za pomocą wykresów i metryk, jak i w formie funkcjonalnej - w postaci aplikacji webowej umożliwiającej praktyczne użycie modelu.
 
 ## 2. Języki i biblioteki
 Projekt został zrealizowany w języku **Python**, przy użyciu następujących bibliotek:
@@ -40,8 +40,23 @@ W celu efektywnego zarządzania i przetwarzania danych, zaimplementowana został
 * **Etykietowanie** odpowiednich labeli do obrazów na podstawie struktury katalogów
 
 ## 4. Architektura Konwolucyjnej Sieci Neuronowej (CNN)
-...
+Model opiera się na uproszczonej architekturze **Tiny VGG**, dostosowanej do klasyfikacji obrazów scen naturalnych. Został zaprojektowany z myślą o wysokiej wydajności i możliwości trenowania na sprzęcie o ograniczej mocy obliczeniowej, zachowując jedocześnie zdolność do dokładnego rozpoznawania cech wizualnych.
+WSTĘP TRZEBA JESZCZE DOPRACOWAĆ
 
+**Struktura architektury**
+1. Bloki konwolucyjne
+   * Model składa się z **trzech bloków konwolucyjnych**, z których każdy zawiera:
+       * Dwie warstwy **konwolucyjne** (`Conv2d`) z funkcją aktywacji `ReLU`, które wyodrębniają cechy wizualne z obrazów
+       * Warstwę **max pooling** (`MaxPool2d`), która redukuje wymiary przestrzenne danych, zwiększając efektywność obliczeniową
+   * Liczba kanałów (filtrów) **wzrastwa z każdym blokiem**, co umożliwia przechwycenie bardziej złożonych wzorców w głębszych warstwacH:
+       * Blok 1: **64** filtry (wartość `hidden_units`)
+       * Blok 2: **128** filrtów
+       * Blok 3: **256** filtrów
+2. Częśc klasyfikacyjna:
+   * Po przejściu przez bloki konwolucyjne, dane są spłaszczane za pomocą warstwy **Flatten**
+   * Następnie dane przechodzą przez warstwę w pełni połączoną (`Linear`), która dokonuje klasyfikacji na 6 kategorii
+3. Funkcja aktywacji na wyjściu:
+   * Model zwraca surowe wartości (logity), które można przekształcić w prawdopodobieństwa klas za pomocą funkcji **Softmax**
 ## 5. Funkcja straty, optymalizator, oraz metryki oceny jakości
 ...
 
