@@ -32,6 +32,8 @@ Każdy z obrazów został przypisany do jednej z sześciu kategorii:
 * **Sea** (morze)
 * **Street** (ulica)
 
+W zbiorze występuję sporadyczne nieścisłości w etykietowaniu np. obraz **samochodu** znajduje się w klasie `lodowiec`. Anomalie te mogą wynikać z błędów etykietowania lub umyślnego wprowadzenia trudniejszych przypadków w celu dorzucenia kolejnych wyzwań podczas konkursu. Tego typu nieprawidłowości **zwiększają złożoność problemu** i wymagają od modelu większej zdolności do **generalizacji**.
+
 W celu efektywnego zarządzania i przetwarzania danych, zaimplementowana została klasa `CustomDataset`, która umożliwia:
 * **Dynamiczne ładowanie obrazów** w czasie treningu i ewaluacji modelu
 * **Transformacje danych**, takie jak normalizacja i augmentacja, dostosowane do specyfiki zbioru
