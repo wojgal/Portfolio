@@ -57,8 +57,15 @@ WSTĘP TRZEBA JESZCZE DOPRACOWAĆ
    * Następnie dane przechodzą przez warstwę w pełni połączoną (`Linear`), która dokonuje klasyfikacji na 6 kategorii
 3. Funkcja aktywacji na wyjściu:
    * Model zwraca surowe wartości (logity), które można przekształcić w prawdopodobieństwa klas za pomocą funkcji **Softmax**
+
 ## 5. Funkcja straty, optymalizator, oraz metryki oceny jakości
-...
+W projekcie wykorzystano `CorssEntropyLoss` jako funkcję straty, odpowiednią dla problemów wielkoklasowej klasyfikacji. Do optymalizacji wybrany został `Adam`, który zapewnia szybkie i stabilne uczenie się dzięki adaptacyjnym współczynnikom uczenia, przy `lr=0.001`.
+
+Model oceniony został za pomocą:
+1. Dokładności (`Accuracy`), monitorującej ogólną skuteczność klasyfikacji
+2. Macierzy pomyłek (`Confusion Matrix`), umożliwiającej analizę błędów i identyfikację najczęściej mylonych kategorii
+
+Takie podejście pozwoliło na efektywne trenowanie i ocenę modelu, zapewniając jednocześnie możliwość szczegółowej analizy jego wyników.
 
 ## 6. Wizualizacja wyników
 ...
