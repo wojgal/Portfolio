@@ -1,4 +1,4 @@
-# Model Regresji Liniowej: Przewidywanie Cen Domów.
+# House Pricer
 
 ## 1. Wprowadzenie
 Projekt przedstawia stworzenie **modelu regresji liniowej** do **przewidywania cen domów** na podstawie ich **powierzchni**. Zadanie ilustruje prostą, ale skuteczną metodologię **wnioskowania maszynowego**. Całość osadzona jest w intuicyjnej **aplikacji webowej**, umożliwiającej użytkownikowi wygodne korzystanie z modelu i eksplorację jego wyników w czasie rzeczywistym.
