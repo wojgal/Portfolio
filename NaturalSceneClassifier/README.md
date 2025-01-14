@@ -40,8 +40,7 @@ W celu efektywnego zarządzania i przetwarzania danych, zaimplementowana został
 * **Etykietowanie** odpowiednich labeli do obrazów na podstawie struktury katalogów
 
 ## 4. Architektura Konwolucyjnej Sieci Neuronowej (CNN)
-Model opiera się na uproszczonej architekturze **Tiny VGG**, dostosowanej do klasyfikacji obrazów scen naturalnych. Został zaprojektowany z myślą o wysokiej wydajności i możliwości trenowania na sprzęcie o ograniczej mocy obliczeniowej, zachowując jedocześnie zdolność do dokładnego rozpoznawania cech wizualnych.
-WSTĘP TRZEBA JESZCZE DOPRACOWAĆ
+W projekcie zastosowano **Konwolucyjną Sieć Neuronową (CNN)**, zaprojektowaną w celu skutecznej **klasyfikacji obrazów scen nautralnych na sześć kategorii**. Model został skonstruowany w oparciu o architekturę **Tiny VGG**, która łączy wysoką efektynwość z umiarkowaną złożonością obliczeniową. Struktura sieci składa się z kilku bloków konwolucyjnych, które wyodrębniają kluczowe cechy wizualne z obrazów oraz części klasyfikacyjnej, która przekształca te cechy w ostateczne predykcje.
 
 **Struktura architektury**
 1. **Bloki konwolucyjne**
