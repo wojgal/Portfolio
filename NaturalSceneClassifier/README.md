@@ -60,7 +60,7 @@ WSTĘP TRZEBA JESZCZE DOPRACOWAĆ
 
 ![image](https://github.com/user-attachments/assets/a8f1d51c-f117-491c-96fc-6498600827a7)
 
-## 5. Funkcja straty, optymalizator, oraz metryki oceny jakości
+## 5. Funkcja straty, optymalizator oraz metryki oceny jakości
 W projekcie wykorzystano `CorssEntropyLoss` jako funkcję straty, odpowiednią dla problemów wielkoklasowej klasyfikacji. Do optymalizacji wybrany został `Adam`, który zapewnia szybkie i stabilne uczenie się dzięki adaptacyjnym współczynnikom uczenia, przy `lr=0.001`.
 
 Model oceniony został za pomocą:
@@ -93,4 +93,15 @@ Analiza macierzy pomyłek pozwala lepiej zrozumieć trudności modelu i wskazuje
 
 
 ## 7. Aplikacja webowa z wykorzystaniem modelu
-...
+Model został wdrożony w postaci prostej i intuicyjnej aplikacji webowej stworzonej przy użyciu **Streamlit**, która umożliwia użytkownikom interakcję z modelem i testowania jego działania w praktyce.
+
+**Funkcjonalności:**
+* **Wgrywanie obrazów**: użytkownik przesyła dowolny obraz krajobrazu
+* **Przetwarzanie**: obraz jest automatycznie transformowany, a model dokonuje predykcji
+* **Wyniki**: aplikacja wyświetla przewidywaną kategorię
+
+![image](https://github.com/user-attachments/assets/820701a6-b842-48e9-961c-0fd6eeb36b3e)
+
+![image](https://github.com/user-attachments/assets/652ad644-29a2-480c-a46e-4d89590bcfa2)
+
+
