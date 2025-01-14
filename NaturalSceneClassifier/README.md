@@ -44,18 +44,18 @@ Model opiera się na uproszczonej architekturze **Tiny VGG**, dostosowanej do kl
 WSTĘP TRZEBA JESZCZE DOPRACOWAĆ
 
 **Struktura architektury**
-1. Bloki konwolucyjne
+1. **Bloki konwolucyjne**
    * Model składa się z **trzech bloków konwolucyjnych**, z których każdy zawiera:
        * Dwie warstwy **konwolucyjne** (`Conv2d`) z funkcją aktywacji **ReLU**, które wyodrębniają cechy wizualne z obrazów
        * Warstwę **max pooling** (`MaxPool2d`), która redukuje wymiary przestrzenne danych, zwiększając efektywność obliczeniową
-   * Liczba kanałów (filtrów) **wzrastwa z każdym blokiem**, co umożliwia przechwycenie bardziej złożonych wzorców w głębszych warstwacH:
+   * Liczba kanałów (filtrów) **wzrastwa z każdym blokiem**, co umożliwia przechwycenie bardziej złożonych wzorców w głębszych warstwach:
        * Blok 1: **64** filtry (wartość `hidden_units`)
        * Blok 2: **128** filrtów
        * Blok 3: **256** filtrów
-**2. Częśc klasyfikacyjna:**
+2. **Częśc klasyfikacyjna**:
    * Po przejściu przez bloki konwolucyjne, dane są spłaszczane za pomocą warstwy **Flatten**
    * Następnie dane przechodzą przez warstwę w pełni połączoną (`Linear`), która dokonuje klasyfikacji na 6 kategorii
-**3. Funkcja aktywacji na wyjściu:**
+3. **Funkcja aktywacji na wyjściu**:
    * Model zwraca surowe wartości (logity), które można przekształcić w prawdopodobieństwa klas za pomocą funkcji **Softmax**
 
 ## 5. Funkcja straty, optymalizator, oraz metryki oceny jakości
