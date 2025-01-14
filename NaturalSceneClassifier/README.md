@@ -68,7 +68,24 @@ Model oceniony został za pomocą:
 Takie podejście pozwoliło na efektywne trenowanie i ocenę modelu, zapewniając jednocześnie możliwość szczegółowej analizy jego wyników.
 
 ## 6. Wizualizacja wyników
-...
+Wyniki treningu i ewaluacji modelu CNN zostały przedstawione w formie trzech wykresów, które ilustrują postęp w procesie uczenia się oraz efektywności klasyfikacji.
+
+1. Wykres dokładności (`Accuracy`)
+Wykres przedstawia zmianę dokładnosći w trakcie treningu (zbiór treningowy i walidacyjny) oraz ostateczną dokładność modelu na zbiorze testowym. Model stopniowo przez `15` **epok** poprawiał swoje wyniki, osiągając końcowo dokładność **84,24%**.
+![accuracy](https://github.com/user-attachments/assets/ee318eb7-850e-45af-a429-e55ef17156f9)
+
+2. Wykres funkcji straty (`Loss Function`)
+Wykres obrazuje zmiany wartości funkcji straty podczas treningu i walidacji oraz ostateczną stratę na zbiorze testowym. Obserwowany trend spadkowy potwierdza efektywność procesu uczenia się, choć pod koniec można zauważyć lekki wzrost straty walidacyjnej, co może być oznaką początków przeuczenia.
+![loss](https://github.com/user-attachments/assets/f8504bd7-04e1-45a2-992b-b308407890c0)
+
+3. Macierz pomyłek (`Confusion Matrix`)
+Macierz pomyłek ilustruje, jak często model klasyfikował obrazy poprawnie oraz które klasy były najczęściej mylone. W naszym przypadku szczególnie zauważalne są pomyłki między kategoriami:
+* Budynki (`buildings`) i ulica (`street`) - co prawdopodobnie wynika z podobnych elementów architektonicznych widocznych na obu klasach
+* Góra (`mountain`) i lodowiec (`glacier`) - co jest zrozumiałe, biorać pod uwagę wizualne podobieńśtwo między tymi krajobrazami
+
+Analiza macierzy pomyłek pozwala lepiej zrozumieć trudności modelu i wskazuje potencjalne możliwości ulepszenia poprzez modyfikację zbioru danych lub architektury.
+![confusion_matrix](https://github.com/user-attachments/assets/1e75e00a-89a2-4245-a8b6-cb5404ad1460)
+
 
 ## 7. Aplikacja webowa z wykorzystaniem modelu
 ...
