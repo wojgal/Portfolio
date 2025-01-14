@@ -53,7 +53,7 @@ WSTĘP TRZEBA JESZCZE DOPRACOWAĆ
        * Blok 2: **128** filrtów
        * Blok 3: **256** filtrów
 2. **Częśc klasyfikacyjna**:
-   * Po przejściu przez bloki konwolucyjne, dane są spłaszczane za pomocą warstwy **Flatten**
+   * Po przejściu przez bloki konwolucyjne, dane są spłaszczane za pomocą warstwy `Flatten`
    * Następnie dane przechodzą przez warstwę w pełni połączoną (`Linear`), która dokonuje klasyfikacji na 6 kategorii
 3. **Funkcja aktywacji na wyjściu**:
    * Model zwraca surowe wartości (logity), które można przekształcić w prawdopodobieństwa klas za pomocą funkcji **Softmax**
