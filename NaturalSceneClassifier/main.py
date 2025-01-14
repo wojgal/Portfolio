@@ -9,7 +9,7 @@ if 'model' not in st.session_state:
     st.session_state.model.eval()
 
 # Interfejs użytkownika
-st.title('Natural Scene Classifier')
+st.title('Natural Scene Classifier 📝')
 
 st.markdown('---')
 
@@ -17,7 +17,13 @@ st.markdown('---')
 with st.expander("O aplikacji"):
     st.write("""
         Aplikacja pozwala na rozpoznawanie naturalnych scen na podstawie przesłanego obrazu.\n
-        Rozpoznawane kategorie to: ulica, budynek, morze, las, lodowiec i góra.\n
+        Rozpoznawane kategorie to:\n 
+        * Ulica 🛣\n 
+        * Budynek 🏢\n 
+        * Morze 🌊\n
+        * Las 🌳\n
+        * Lodowiec ❄️\n
+        * Góra 🏔\n
         Wgraj obraz w formacie PNG, JPG lub JPEG, a model wyświetli przewidywaną klasę.
     """)
 
