@@ -58,7 +58,7 @@ WSTĘP TRZEBA JESZCZE DOPRACOWAĆ
 3. **Funkcja aktywacji na wyjściu**:
    * Model zwraca surowe wartości (logity), które można przekształcić w prawdopodobieństwa klas za pomocą funkcji **Softmax**
 
-![tiny_vgg](https://github.com/user-attachments/assets/7b5172b1-d57b-40d0-bc5c-dd4efadfbf9b)
+![image](https://github.com/user-attachments/assets/a8f1d51c-f117-491c-96fc-6498600827a7)
 
 ## 5. Funkcja straty, optymalizator, oraz metryki oceny jakości
 W projekcie wykorzystano `CorssEntropyLoss` jako funkcję straty, odpowiednią dla problemów wielkoklasowej klasyfikacji. Do optymalizacji wybrany został `Adam`, który zapewnia szybkie i stabilne uczenie się dzięki adaptacyjnym współczynnikom uczenia, przy `lr=0.001`.
