@@ -1,11 +1,13 @@
 import streamlit as st
 import torch
 from cnn import CNN, model_eval
+import os
 
 # Załadowanie modelu
 if 'model' not in st.session_state:
     st.session_state.model = CNN(input_shape=3, hidden_units=64, output_shape=6)
-    st.session_state.model.load_state_dict(torch.load(f='model.pth', map_location='cpu', weights_only=True))
+    model_path = os.path.join(os.path.dirname(__file__), 'model.pth')
+    st.session_state.model.load_state_dict(torch.load(f=model_path, map_location='cpu', weights_only=True))
     st.session_state.model.eval()
 
 # Interfejs użytkownika
