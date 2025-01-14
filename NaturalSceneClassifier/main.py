@@ -37,7 +37,7 @@ uploaded_image = st.file_uploader(label='Zaladuj zdjecie krajobrazu, a model roz
 # Wyświetlanie obrazu i jego ewaluacja
 if uploaded_image:
     try:
-        st.image(uploaded_image, caption='Wgrane zdjęcie', use_column_width=True)
+        st.image(uploaded_image, caption='Wgrane zdjęcie')
 
         if st.button('Rozpoznaj obraz'):
             label = model_eval(model=st.session_state.model, image_file=uploaded_image)
