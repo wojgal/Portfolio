@@ -1,7 +1,7 @@
 # Natural Scene Classifier
 
 ## 1. Wprowadzenie
-Projekt przedstawia stworzenie **modelu klasyfikacji obrazów scen naturalnych** przy użyciu **Konwolucyjnych Sieci Neuronowcyh (CNN)**. Celem było zbudowanie i ocena modelu, który z wysoką dokładnością klasyfikuje zdjęcia do odpowiednich kategorii scen naturalnych na podstawie dostarczonego zbioru danych. Wyniki przedstawione są zarówno w formie wizualnej, za pomocą wykresów i metryk, jak i w formie funkcjonalnej - w postaci aplikacji webowej, dostępnej online pod adresem: [Natural Scene Classifier](https://naturalsceneclassifier.streamlit.app/). Dzięki czemu każdy może samodzielnie przetestować działanie modelu na własnych obrazach.
+Projekt przedstawia stworzenie **modelu klasyfikacji obrazów scen naturalnych** przy użyciu **Konwolucyjnych Sieci Neuronowcyh (CNN)**. Celem było zbudowanie i ocena modelu, który z wysoką dokładnością klasyfikuje zdjęcia do odpowiednich kategorii scen naturalnych na podstawie dostarczonego zbioru danych. Wyniki przedstawione są zarówno w formie wizualnej, za pomocą wykresów i metryk, jak i w formie funkcjonalnej - w postaci aplikacji webowej, dostępnej **online** pod adresem: [Natural Scene Classifier](https://naturalsceneclassifier.streamlit.app/). Dzięki czemu każdy może **samodzielnie** przetestować działanie modelu na własnych obrazach.
 
 ## 2. Języki i biblioteki
 Projekt został zrealizowany w języku **Python**, przy użyciu następujących bibliotek:
@@ -94,7 +94,7 @@ Analiza macierzy pomyłek pozwala lepiej zrozumieć trudności modelu i wskazuje
 ## 7. Aplikacja webowa z wykorzystaniem modelu
 Model został wdrożony w postaci prostej i intuicyjnej aplikacji webowej stworzonej przy użyciu **Streamlit**, która umożliwia użytkownikom interakcję z modelem i testowania jego działania w praktyce.
 
-Aplikacja dostępna jest online pod adresem [www.naturalsceneclassifier.streamlit.app](https://naturalsceneclassifier.streamlit.app/).
+Aplikacja dostępna jest **online** pod adresem [www.naturalsceneclassifier.streamlit.app](https://naturalsceneclassifier.streamlit.app/).
 
 **Funkcjonalności:**
 * **Wgrywanie obrazów**: użytkownik przesyła dowolny obraz krajobrazu
