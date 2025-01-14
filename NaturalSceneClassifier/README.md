@@ -44,7 +44,7 @@ Model opiera się na uproszczonej architekturze **Tiny VGG**, dostosowanej do kl
 WSTĘP TRZEBA JESZCZE DOPRACOWAĆ
 
 **Struktura architektury**
-1. Bloki konwolucyjne
+**1. Bloki konwolucyjne**
    * Model składa się z **trzech bloków konwolucyjnych**, z których każdy zawiera:
        * Dwie warstwy **konwolucyjne** (`Conv2d`) z funkcją aktywacji **ReLU**, które wyodrębniają cechy wizualne z obrazów
        * Warstwę **max pooling** (`MaxPool2d`), która redukuje wymiary przestrzenne danych, zwiększając efektywność obliczeniową
@@ -52,10 +52,10 @@ WSTĘP TRZEBA JESZCZE DOPRACOWAĆ
        * Blok 1: **64** filtry (wartość `hidden_units`)
        * Blok 2: **128** filrtów
        * Blok 3: **256** filtrów
-2. Częśc klasyfikacyjna:
+**2. Częśc klasyfikacyjna:**
    * Po przejściu przez bloki konwolucyjne, dane są spłaszczane za pomocą warstwy **Flatten**
    * Następnie dane przechodzą przez warstwę w pełni połączoną (`Linear`), która dokonuje klasyfikacji na 6 kategorii
-3. Funkcja aktywacji na wyjściu:
+**3. Funkcja aktywacji na wyjściu:**
    * Model zwraca surowe wartości (logity), które można przekształcić w prawdopodobieństwa klas za pomocą funkcji **Softmax**
 
 ## 5. Funkcja straty, optymalizator, oraz metryki oceny jakości
@@ -70,17 +70,17 @@ Takie podejście pozwoliło na efektywne trenowanie i ocenę modelu, zapewniają
 ## 6. Wizualizacja wyników
 Wyniki treningu i ewaluacji modelu CNN zostały przedstawione w formie trzech wykresów, które ilustrują postęp w procesie uczenia się oraz efektywności klasyfikacji.
 
-### 1. Wykres dokładności (`Accuracy`)<br/>
+### 6.1 Wykres dokładności (`Accuracy`)<br/>
 Wykres przedstawia zmianę dokładnosći w trakcie treningu (zbiór treningowy i walidacyjny) oraz ostateczną dokładność modelu na zbiorze testowym. Model stopniowo przez `15` **epok** poprawiał swoje wyniki, osiągając końcowo dokładność **84,24%**.
 
 ![accuracy](https://github.com/user-attachments/assets/ee318eb7-850e-45af-a429-e55ef17156f9)
 
-### 2. Wykres funkcji straty (`Loss Function`)<br/>
+### 6.2 Wykres funkcji straty (`Loss Function`)<br/>
 Wykres obrazuje zmiany wartości funkcji straty podczas treningu i walidacji oraz ostateczną stratę na zbiorze testowym. Obserwowany trend spadkowy potwierdza efektywność procesu uczenia się, choć pod koniec można zauważyć lekki wzrost straty walidacyjnej, co może być oznaką początków przeuczenia.
 
 ![loss](https://github.com/user-attachments/assets/f8504bd7-04e1-45a2-992b-b308407890c0)
 
-### 3. Macierz pomyłek (`Confusion Matrix`)<br/>
+### 6.3 Macierz pomyłek (`Confusion Matrix`)<br/>
 Macierz pomyłek ilustruje, jak często model klasyfikował obrazy poprawnie oraz które klasy były najczęściej mylone. W naszym przypadku szczególnie zauważalne są pomyłki między kategoriami:
 * Budynki (`buildings`) i ulica (`street`) - co prawdopodobnie wynika z podobnych elementów architektonicznych widocznych na obu klasach
 * Góra (`mountain`) i lodowiec (`glacier`) - co jest zrozumiałe, biorać pod uwagę wizualne podobieńśtwo między tymi krajobrazami
