@@ -94,7 +94,7 @@ Analiza macierzy pomyłek pozwala lepiej zrozumieć trudności modelu i wskazuje
 ## 7. Aplikacja webowa z wykorzystaniem modelu
 Model został wdrożony w postaci prostej i intuicyjnej aplikacji webowej stworzonej przy użyciu **Streamlit**, która umożliwia użytkownikom interakcję z modelem i testowania jego działania w praktyce.
 
-Aplikacja dostępna jest online pod adresem [https://naturalsceneclassifier.streamlit.app](https://naturalsceneclassifier.streamlit.app/).
+Aplikacja dostępna jest online pod adresem [www.naturalsceneclassifier.streamlit.app](https://naturalsceneclassifier.streamlit.app/).
 
 **Funkcjonalności:**
 * **Wgrywanie obrazów**: użytkownik przesyła dowolny obraz krajobrazu
