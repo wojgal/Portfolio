@@ -70,7 +70,7 @@ Takie podejście pozwoliło na efektywne trenowanie i ocenę modelu, zapewniają
 ## 6. Wizualizacja wyników
 Wyniki treningu i ewaluacji modelu CNN zostały przedstawione w formie trzech wykresów, które ilustrują postęp w procesie uczenia się oraz efektywności klasyfikacji.
 
-1. Wykres dokładności (`Accuracy`)
+1. Wykres dokładności (`Accuracy`)\n
 Wykres przedstawia zmianę dokładnosći w trakcie treningu (zbiór treningowy i walidacyjny) oraz ostateczną dokładność modelu na zbiorze testowym. Model stopniowo przez `15` **epok** poprawiał swoje wyniki, osiągając końcowo dokładność **84,24%**.
 
 ![accuracy](https://github.com/user-attachments/assets/ee318eb7-850e-45af-a429-e55ef17156f9)
