@@ -6,15 +6,15 @@ To repozytorium zawiera moje indywidualne projekty programistyczne, stanowiące 
 
 ## Projekty
 
-### 1. [Natural Scene Classifier](./CNN)
+### 1. [Natural Scene Classifier](./NaturalSceneClasifier)
 - Model **klasyfikacji obrazów scen naturalnych** oparty na **konwolucyjnych sieciach nueronowych**
 - Wytrenowany i testowany na zbiorze **Intel** Image Classification, osiągając wynik **84,24%** dokładności
 
-### 2. [House Pricer](./LinearRegression%20Model)
+### 2. [House Pricer](./HousePricer)
 - **Model regresji liniowej** przewidujący **ceny domów** na podstawie powierzchni.
 - Zbudowany przy użyciu **PyTorch** i zintegrowany z prostą aplikacją webową **Streamlit**.
 
-### 3. [TicTacToe with AI](./TicTacToe%20%2B%20AI)
+### 3. [TicTacToe with AI](./TicTacToeWithAI)
 - **Kółko i krzyżyk** z trybem dla dwóch graczy oraz gracza przeciwko AI, stworzony w **PyGame**.
 - AI korzysta z algorytmu **MinMax** do podejmowania optymalnych decyzji.
 
