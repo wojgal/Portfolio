@@ -6,7 +6,7 @@ To repozytorium zawiera moje indywidualne projekty programistyczne, stanowiące 
 
 ## Projekty
 
-### 1. [Natural Scene Classifier](./NaturalSceneClasifier)
+### 1. [Natural Scene Classifier](./NaturalSceneClassifier)
 - Model **klasyfikacji obrazów scen naturalnych** oparty na **konwolucyjnych sieciach nueronowych**
 - Wytrenowany i testowany na zbiorze **Intel** Image Classification, osiągając wynik **84,24%** dokładności
 
